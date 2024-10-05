@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Contacto</h1>
+    <form class="contact-form" method="post">
+      <div class="input-group">
+        <input type="text" name="nombre" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+          title="Nombre, solo acepta letras y espacios en blanco">
+      </div>
+      <div class="input-group">
+        <input type="text" name="apellidoPaterno" placeholder="Escribe tu Apellido Paterno"
+          pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Apellido Paterno, solo acepta letras y espacios en blanco">
+      </div>
+      <div class="input-group">
+        <input type="text" name="apellidoMaterno" placeholder="Escribe tu Apellido Materno"
+          pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Apellido Materno, solo acepta letras y espacios en blanco">
+      </div>
+      <div class="input-group">
+        <input type="email" name="correo" placeholder="Escribe tu correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+          title="Correo inválido" required>
+      </div>
+      <div class="input-group">
+        <input type="text" name="celular" placeholder="Escribe tu celular" pattern="\d{10}"
+          title="Celular, solo acepta números">
+      </div>
+      <div class="input-group">
+        <label for="sexo" class="ola">Selecciona tu género:</label>
+        <select name="sexo" id="sexo" required>
+          <option value="" disabled selected>Selecciona tu género</option>
+          <option value="masculino">Masculino</option>
+          <option value="femenino">Femenino</option>
+          <option value="inclusivo">Otro</option>
+        </select>
+      </div>
+      <div class="submit-btn">
+        <input type="submit" value="Enviar">
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

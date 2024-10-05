@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="./img/logo.png" />
+  <title>Casio</title>
+</head>
+
+<body>
+  <br />
+  <header>
+    <div class="container-logo">
+      <img src="./img/Casio_logo.svg.png" alt="logo-casio" />
+    </div>
+    <nav class="menu">
+      <a href="#reloj-1">MDV-106-1AV</a>
+      <a href="#reloj-2">AE-1200WHD-7AV</a>
+      <a href="#reloj-3">DW-5600BCE-1</a>
+      <a href="#reloj-4">A700WEVG-9A</a>
+      <a href="#reloj-5">MTP-B145D-2A1V</a>
+      <button class="carrito" id="carrito-btn"><img src="./img/shopping_cart_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+          alt=""></button>
+    </nav>
+  </header>
+  <div id="modal-carrito" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Tu carrito</h2>
+      <div class="carrito-items">
+      </div>
+      <button class="comprar">Comprar</button>
+    </div>
+  </div>
+
+  <main>
+    <section class="container-reloj-marlin" id="reloj-1">
+      <article>
+        <img src="./img/marlin.webp" alt="marlin" width="200px" />
+        <p>Casio</p>
+        <h2>MDV-106-1AV</h2>
+        <p>MX$1199</p>
+        <input type="button" value="Agregar al carrito" onclick="agregarAlCarrito('MDV-106-1AV', 'MX$1199')" />
+      </article>
+    </section>
+
+    <section class="container-reloj-aesterik" id="reloj-2">
+      <article>
+        <img src="./img/image.avif" alt="aestrik" width="300px" />
+        <p>Casio</p>
+        <h2>AE-1200WHD-7AV</h2>
+        <p>MX$799</p>
+        <input type="button" value="Agregar al carrito" onclick="agregarAlCarrito('AE-1200WHD-7AV', 'MX$799')" />
+      </article>
+    </section>
+
+    <section class="container-reloj-ghsock" id="reloj-3">
+      <article>
+        <img src="./img/gshok.avif" alt="gshock" width="300px" />
+        <p>Casio G-SHOCK</p>
+        <h2>DW-5600BCE-1</h2>
+        <p>MX$2999</p>
+        <input type="button" value="Agregar al carrito" onclick="agregarAlCarrito('DW-5600BCE-1', 'MX$2999')" />
+      </article>
+    </section>
+    <br>
+    <section class="container-reloj-oro" id="reloj-4">
+      <article>
+        <img src="./img/oro.avif" alt="oro" width="300px" />
+        <p>Casio</p>
+        <h2>A700WEVG-9A</h2>
+        <p>MX$2,249</p>
+        <input type="button" value="Agregar al carrito" onclick="agregarAlCarrito('A700WEVG-9A', 'MX$2,249')" />
+      </article>
+    </section>
+    <br>
+    <section class="container-reloj-tifany" id="reloj-5">
+      <article>
+        <img src="./img/tifany.avif" alt="oro" width="300px" />
+        <p>Casio</p>
+        <h2>MTP-B145D-2A1V</h2>
+        <p>MX$2,349</p>
+        <input type="button" value="Agregar al carrito" onclick="agregarAlCarrito('MTP-B145D-2A1V', 'MX$2,349')" />
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <section>
+      <p>
+        © 2024 CASIO MEXICO MARKETING S. de R.L de C.V.
+      </p>
+    </section>
+  </footer>
+
+  <script src="./js/script.js">
+  </script>
+</body>
+
+</html>

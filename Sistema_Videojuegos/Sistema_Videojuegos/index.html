@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./image/mando.png">
+  <title>GameStore</title>
+</head>
+
+<body>
+  <div id="contenido">
+    <header>
+      <aside class="titulo">
+        <h1>G A M E S T O R E</h1>
+        <img src="./image/mando.png" alt="">
+      </aside>
+      <nav class="menu">
+        <a href="#inicioo" id="inicioLink"><img src="./image/mando.png" class="logoimagenH"></a>
+        <a href="#"><img src="./image/Xbox_one_logo.svg.png" id="xbox" class="logoimagenX"></a>
+        <a href="#"><img src="./image/nintendochido.png" id="nintendo" class="logoimagenN"></a>
+        <a href="#"><img src="./image/logoplay.png" id="playstation" class="logoimagenP"></a>
+      </nav>
+    </header>
+    <aside class="carrito-de-compras">
+      <div id="carrito">
+        <h2 class="titulocarrito">Carrito de compras <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></h2>
+        <table id="lista-carrito" class="lista-tarea">
+          <thead>
+            <tr>
+              <th class="th">Imagen</th>
+              <th class="th">Nombre</th>
+              <th class="th">Precio</th>
+              <th class="th">Cantidad</th>
+              <th class="th"></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <a href="#" id="vaciar-carrito" class="botonv">Vaciar Carrito</a>
+        <a href="#" id="comprar" class="botonc">Comprar</a>
+      </div>
+    </aside>
+    <main class="main">
+      <aside class="inicio" id="inicioo">
+        <h2>Recomendaciones</h2>
+      </aside>
+      <section class="productos" id="productos-container">
+
+      </section>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 id="modal-titulo"></h2>
+          <iframe id="modal-iframe" width="560" height="315" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+  </div>
+  </main>
+  <br>
+  <footer class="footer">
+    <small>Sitio diseñado por <a href="https://www.instagram.com/ederaj.30/" target="_blank"
+        rel="noopener">@ederaj.30</a></small>
+  </footer>
+  <script src="./js/script.js"></script>
+  <script src="./js/productos.js"></script>
+</body>
+
+</html>
