@@ -1,0 +1,34 @@
+{
+  "name": "version_1_b",
+  "version": "1.0.0",
+  "description": "Primera Aplicacion con NODEJS",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./index.js",
+    "server": "nodemon index.js"
+  },
+  "keywords": [
+    "Nodejs",
+    "Express",
+    "Nodemon",
+    "Mysql"
+  ],
+  "author": "Hugo Perez Ortiz",
+  "license": "ISC",
+  "dependencies": {
+    "connect": "^3.7.0",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-session": "^1.18.1",
+    "express-validator": "^7.2.0",
+    "jquery": "^3.7.1",
+    "mariadb": "^3.3.2",
+    "pug": "^3.0.3",
+    "sequelize": "^6.37.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}

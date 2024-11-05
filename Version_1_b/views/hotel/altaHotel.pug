@@ -1,0 +1,27 @@
+extends ../layout/index.pug
+block cuerpoContenido
+    h1.text-center=pagina
+    if errores
+        div(class="row justify-content-center text-bg-danger")
+            div(class="col-md-4")
+                each er in errores
+                    h1(class="fw-bold fs-6")=er.msg
+    div(class="row justify-content-center")
+        div(class="col-md-5")
+            form(class="space-y-5" action="/hotel/Hotel" method="POST" noValidate)
+                div(class="mb-1")
+                    label(for="nombre" class="form-label") Nombre                               
+                                                                                                    //- name = nombre_en_base_de_datos
+                    input#nombre(class="form-control" type="text" placeholder="Nombre del Gerente" name="nombre" value=dato?dato.nombre:'')
+                div(class="mb-1")
+                    label(for="apaterno" class="form-label") Apellido Paterno
+                    input#apaterno(class="form-control" type="text" placeholder="Apellido Paterno" name="ap_paterno" value=dato?dato.aPaterno:'')
+                div(class="mb-1")
+                    label(for="amaterno" class="form-label") Apellido Materno
+                    input#amaterno(class="form-control" type="text" placeholder="Apellido Materno" na   me="ap_materno" value=dato?dato.aMaterno:'')
+                div(class="mb-1")
+                    label(for="telefono" class="form-label") Telefono
+                    input#telefono(class="form-control" type="text" placeholder="Telefono" name="telefono" value=dato?dato.telef:'')
+
+                div(class="mb-1")
+                    button(type="submit" class="btn btn-primary col-auto") Enviar
